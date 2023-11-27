@@ -1,0 +1,17 @@
+@import './dark/index';
+@import './light/index';
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--color-light-100);
+  color: var(--color-primary-100);
+  font: var(--font-m) !important;
+  transition: background ease-in-out 1s;
+}
+
+.main-wrap {
+  display: flex;
+  flex: 1;
+}

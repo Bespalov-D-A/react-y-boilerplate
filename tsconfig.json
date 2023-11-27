@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "allowUmdGlobalAccess": true,
+    "strictNullChecks": true,
+    "module": "ESNext",
+    "target": "es2017",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      // "@root/*": ["./*"],
+      "@app/*": ["src/1-app/*"],
+      "@process/*": ["./src/3-process/*"],
+      "@pages/*": ["src/3-pages/*"],
+      "@widgets/*": ["./src/4-widgets/*"],
+      "@features/*": ["./src/5-features/*"],
+      "@entities/*": ["./src/6-entities/*"],
+      "@shared/*": ["./src/7-shared/*"],
+      "@svg/*": ["./src/7-shared/assets/images/svg/*.svg"]
+    },
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  },
+  "include": [
+    "./config/jest/setupTests.ts",
+    "./src/**/*.ts",
+    ".src/*.tsx",
+    "./src/**/*.tsx",
+    "./config/**/*.ts",
+    "webpack.config.ts"
+  ]
+}
