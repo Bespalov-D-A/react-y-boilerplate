@@ -1,4 +1,4 @@
-# React-v-boilerplate
+# React-Y-boilerplate
 
 ### React/FSD methodology/webpack
 
